@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/malo
+    username: root
+    password: 123456
+  data:
+    redis:
+      host: 127.0.0.1
+      database: 0
+      password:
+      connect-timeout: 1s
+      timeout: 1s
+server:
+  jetty:
+    threads:
+      acceptors: -1
+
+jwt:
+  secret: HhOtfHLz98ftVB0Oi/zgS8ZpRjZV2d9w+ld42Qmbnao=
+  ttl: 1800 #JWT 有效期(单位：秒)
+
+logging:
+  level:
+    org.springframework.security: trace

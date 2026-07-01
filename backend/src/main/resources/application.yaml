@@ -1,3 +1,5 @@
 spring:
   application:
     name: north-rend
+  profiles:
+    active: dev
